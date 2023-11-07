@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>ERRO</title>
 </head>
 <body>
-    <h1>Erro</h1>
-    <p>Ocorreu um erro durante o cálculo: {{ erro }}</p>
+    <div class = "container">
+        <h1>Erro</h1>
+        <p>Ocorreu um erro durante o cálculo: {{ erro }}</p>
+    </div>
 </body>
 </html>
