@@ -21,6 +21,15 @@ h1 {
     color: #007bff;
 }
 
+#formResult {
+    margin: 0 auto;
+    background-color: #fcfbfb;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
 form {
     display: flex;
     flex-direction: column;

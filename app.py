@@ -16,7 +16,7 @@ def calcular():
             
             tempo = math.ceil(objetivo / poupanca_mensal)
             
-            return render_template('resultado.html', tempo=tempo)
+            return render_template('index.html', tempo=tempo)
         except Exception as e:
             return render_template('erro.html', erro=str(e))
 
