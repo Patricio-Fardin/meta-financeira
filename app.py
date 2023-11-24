@@ -1,24 +1,24 @@
 from flask import Flask, request, render_template
-import math
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-@app.route('/calcular', methods=['POST'])
-def calcular():
+@app.route('/', methods=['GET','POST'])
+def calcular_meta():
     if request.method == 'POST':
         try:
             objetivo = float(request.form['objetivo'])
             poupanca_mensal = float(request.form['poupanca_mensal'])
-            
-            tempo = math.ceil(objetivo / poupanca_mensal)
-            
-            return render_template('index.html', tempo=tempo)
-        except Exception as e:
-            return render_template('erro.html', erro=str(e))
+            tempo = objetivo / poupanca_mensal
+            anos = int(tempo/12)
+            meses = int(tempo%12)  
+            return render_template('index.html', tempo=tempo, meses=meses,anos=anos, mostrar_resultado=True)
+
+        except ValueError:
+            erro = "Certifique-se de inserir números válidos"
+            return render_template('index.html', erro=erro)
+
+    return render_template('index.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
