@@ -1,8 +1,15 @@
 # README
 
-This is the [Flask](http://flask.pocoo.org/) [quick start](http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application) example for [Render](https://render.com).
+Links do Projeto 6: Calculadora de Meta Financeira com Economia Mensal
 
-The app in this repo is deployed at [https://flask.onrender.com](https://flask.onrender.com).
+Por Patricio Fardin
+
+
+Link de Homologação: 		https://meta-financeira-ie5o.onrender.com/
+
+Link do Código no GitHub: 	https://github.com/Patricio-Fardin/meta-financeira
+
+Link do Vídeo no Drive: 	https://drive.google.com/file/d/1DeR4qez7bLPy3JY2dwa1Ht-ePgI4a3Aw/view?usp=sharing
 
 ## Deployment
 
